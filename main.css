@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position:fixed; /*Holds position on screen*/
+    top: 0px; /*Sets up position at top*/
+    height: 50px; 
+    display: flex; /*Sets up a flex container in header*/
+    justify-content: space-between; /*Puts space between boxes in flex container*/
+}
+
+header a, header h1 {
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+header div {
+    align-self: center; /*aligns content at center on horizontal axis*/
+    margin: 25px;
+}
+
+section {
+    display: flex;
+    padding-top: 75px;
+}
+
+#left {
+    float: left; /*pushes this section over to the left*/
+    width: 75%; /*Defines the width the section will cover spanning from the left*/
+    display: flex;
+    justify-content: space-between ; /*puts space between flex boxes*/
+    justify-content: space-around; /*puts space on the outside flex boxes */
+    flex-wrap: wrap; /*wraps flex boxes in smaller screens */
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    background-color: rgb(99, 98, 98);
+    margin: 10px;
+    border-radius: 15px;
+}
+.cardimg {
+    background-color: brown;
+    height: 100px;
+    width: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.card h2 {
+    padding-left: 10px;
+}
+
+.card p {
+    padding-left: 5px;
+}
+
+.card:hover { /*Targets card class when cursor hovers over it */
+    background-color: rgb(131, 131, 131); /*Changes color*/
+    transform: scale(1.05); 
+    transition: all 1s ease;
+}
+
